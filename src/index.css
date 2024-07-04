@@ -1,3 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* I consider using !important a small defeat, but I simply couldn't figure out a 
+   better, less-intensive way to get the borderless look. */
+.MuiDataGrid-root {
+    border: none !important;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
